@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="96ac257c-fd29-4c9d-b3bf-d69089a42f93" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-12-29T07:07:22.432+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL" />
+  <version value="0.1" />
+  <name value="ETDAMCDLBundleProfile" />
+  <title value="ETDA-MCDL-Bundle" />
+  <status value="draft" />
+  <date value="2021-12-29T07:07:21.3949475+00:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="FHIR Document สำหรับใบอนุญาตขับรถ" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="เพื่อกำหนดโครงสร้างข้อมูลของข้อความอิเล็กทรอนิกส์ในรูปแบบ XML (Extensible Markup Language) หรือ JSON (JavaScript Object Notation) ให้สอดคล้องกับมาตรฐานสากลของ HL7 FHIR และเพื่อใช้เป็นมาตรฐานประกอบการจัดทำข้อมูลใบรับรองแพทย์ (สำหรับใบอนุญาตขับรถ) (Medical Certificate For Driving License)" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier" />
+      <min value="1" />
+      <patternIdentifier>
+        <use value="official" />
+        <system value="https://ict.moph.go.th/MCDL" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.use">
+      <path value="Bundle.identifier.use" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.system">
+      <path value="Bundle.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.value">
+      <path value="Bundle.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.identifier.period">
+      <path value="Bundle.identifier.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.period.start">
+      <path value="Bundle.identifier.period.start" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.period.end">
+      <path value="Bundle.identifier.period.end" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="document" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

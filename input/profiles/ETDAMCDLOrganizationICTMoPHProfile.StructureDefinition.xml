@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="8737ce91-1a93-4de1-9d64-e823bacae189" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-29T08:44:40.977+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLOrganizationICTMoPHProfile" />
+  <title value="ETDA-MCDL-Organization-ICT-MoPH" />
+  <status value="draft" />
+  <date value="2021-12-29T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Organization resource ใช้บันทึกข้อมูลของผู้ดูแล FHIR Document นี้ ได้แก่ ศูนย์เทคโนโลยีสารสนเทศ สำนักงานปลัดกระทรวงสาธารณสุข" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <patternIdentifier>
+        <system value="https://bps.moph.go.th" />
+        <value value="004112400" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <fixedString value="ศูนย์เทคโนโลยีสารสนเทศ สำนักงานปลัดกระทรวงสาธารณสุข" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

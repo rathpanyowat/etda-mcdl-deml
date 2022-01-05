@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-30T06:32:24.646+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLLocationProfile" />
+  <title value="ETDA-MCDL-Location" />
+  <status value="draft" />
+  <date value="2021-12-30T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Location resource ใช้บันทึกข้อมูลสถานที่ตรวจ" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location.name">
+      <path value="Location.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.managingOrganization">
+      <path value="Location.managingOrganization" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.managingOrganization.reference">
+      <path value="Location.managingOrganization.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

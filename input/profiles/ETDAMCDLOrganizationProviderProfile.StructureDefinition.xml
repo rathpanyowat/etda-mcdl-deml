@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="6cbea532-da53-448f-8d43-207569b369f6" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-29T08:50:31.261+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLOrganizationProviderProfile" />
+  <title value="ETDA-MCDL-Organization-Provider" />
+  <status value="draft" />
+  <date value="2021-12-29T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Organization resource ใช้บันทึกข้อมูลสถานพยาบาล" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:hospitalCode">
+      <path value="Organization.identifier" />
+      <sliceName value="hospitalCode" />
+      <min value="1" />
+      <max value="1" />
+      <patternIdentifier>
+        <use value="official" />
+        <system value="https://bps.moph.go.th" />
+      </patternIdentifier>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.text">
+      <path value="Organization.address.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.line">
+      <path value="Organization.address.line" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.city">
+      <path value="Organization.address.city" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.district">
+      <path value="Organization.address.district" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.state">
+      <path value="Organization.address.state" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.postalCode">
+      <path value="Organization.address.postalCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.address.country">
+      <path value="Organization.address.country" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

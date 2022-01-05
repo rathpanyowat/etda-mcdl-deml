@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="b9c6f7bf-09ee-4f55-b849-68ef04eae01e" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2021-12-30T07:19:23.147+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLQuestionnaireResponseProfile" />
+  <title value="ETDA-MCDL-QuestionnaireResponse" />
+  <status value="draft" />
+  <date value="2021-12-30T07:19:22.489754+00:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Practitioner resource ใช้บันทึกข้อมูลในใบรับรองแพทย์ในส่วนที่ผู้ป่วยกรอกเอง" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="QuestionnaireResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="QuestionnaireResponse.status">
+      <path value="QuestionnaireResponse.status" />
+      <fixedCode value="completed" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.authored">
+      <path value="QuestionnaireResponse.authored" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.source">
+      <path value="QuestionnaireResponse.source" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.source.reference">
+      <path value="QuestionnaireResponse.source.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item">
+      <path value="QuestionnaireResponse.item" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="linkId" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question1">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="question1" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question1.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <fixedString value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question1.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <fixedString value="โรคประจำตัว" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question1.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question1.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question2">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="question2" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question2.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <fixedString value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question2.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <min value="1" />
+      <fixedString value="อุบัติเหตุและผ่าตัด" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question2.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question2.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question3">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="question3" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question3.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <fixedString value="3" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question3.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <min value="1" />
+      <fixedString value="เคยเข้ารับการรักษาในโรงพยาบาล" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question3.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question3.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question4">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="question4" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question4.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <fixedString value="4" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question4.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <min value="1" />
+      <fixedString value="โรคลมชัก" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question4.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question4.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question5">
+      <path value="QuestionnaireResponse.item" />
+      <sliceName value="question5" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question5.linkId">
+      <path value="QuestionnaireResponse.item.linkId" />
+      <fixedString value="5" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question5.text">
+      <path value="QuestionnaireResponse.item.text" />
+      <min value="1" />
+      <fixedString value="ประวัติอื่นที่สำคัญ" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question5.answer">
+      <path value="QuestionnaireResponse.item.answer" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="QuestionnaireResponse.item:question5.answer.value[x]">
+      <path value="QuestionnaireResponse.item.answer.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

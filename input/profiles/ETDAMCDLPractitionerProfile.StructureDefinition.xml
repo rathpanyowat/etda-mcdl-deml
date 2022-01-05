@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="0fcbe619-0b65-4ec9-b920-b4f9d638b61e" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-29T09:20:28.712+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner" />
+  <version value="0.1" />
+  <name value="ETDAMCDLPractitionerProfile" />
+  <title value="ETDA-MCDL-Practitioner" />
+  <status value="draft" />
+  <date value="2021-12-29T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Practitioner resource ใช้บันทึกข้อมูลแพทย์" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.text">
+      <path value="Practitioner.name.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.family">
+      <path value="Practitioner.name.family" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.given">
+      <path value="Practitioner.name.given" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.name.prefix">
+      <path value="Practitioner.name.prefix" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.gender">
+      <path value="Practitioner.gender" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.qualification:MDlicense">
+      <path value="Practitioner.qualification" />
+      <sliceName value="MDlicense" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.qualification:MDlicense.identifier">
+      <path value="Practitioner.qualification.identifier" />
+      <min value="1" />
+      <patternIdentifier>
+        <use value="official" />
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="MD" />
+            <display value="Medical License number" />
+          </coding>
+        </type>
+        <system value="https://www.tmc.or.th/" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.qualification:MDlicense.code">
+      <path value="Practitioner.qualification.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7" />
+          <code value="MD" />
+          <display value="Doctor of Medicine" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

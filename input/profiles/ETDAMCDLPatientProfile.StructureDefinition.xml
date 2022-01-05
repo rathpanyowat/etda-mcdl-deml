@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="65b68a5a-cbb3-45f8-8cad-96b329933462" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2021-12-29T08:36:54.092+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLPatientProfile" />
+  <title value="ETDA-MCDL-Patient" />
+  <status value="draft" />
+  <date value="2021-12-29T08:36:52.9878448+00:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Patient resource ใช้บันทึกข้อมูลผู้ป่วย" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:thaiIDNumber">
+      <path value="Patient.identifier" />
+      <sliceName value="thaiIDNumber" />
+      <min value="1" />
+      <max value="1" />
+      <patternIdentifier>
+        <use value="official" />
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="NNTHA" />
+            <display value="National Person Identifier" />
+          </coding>
+        </type>
+        <system value="https://www.dopa.go.th" />
+      </patternIdentifier>
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.text">
+      <path value="Patient.name.text" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.prefix">
+      <path value="Patient.name.prefix" />
+      <min value="1" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.text">
+      <path value="Patient.address.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.city">
+      <path value="Patient.address.city" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.district">
+      <path value="Patient.address.district" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.state">
+      <path value="Patient.address.state" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.country">
+      <path value="Patient.address.country" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

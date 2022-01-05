@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="e915d54f-0527-4fcd-9d78-96a03fb90e33" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2021-12-29T06:57:56.046+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLCompositionProfile" />
+  <title value="ETDA-MCDL-Composition" />
+  <status value="draft" />
+  <date value="2021-12-29T06:57:54.4459732+00:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Composition resource ซึ่งใช้สำหรับจัดโครงสร้างของเอกสารใน FHIR document (Bundle resource)" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <min value="1" />
+      <patternIdentifier>
+        <use value="official" />
+        <system value="https://oid.teda.th/" />
+        <value value="2.16.764.1.4.100.9.1.1.1" />
+      </patternIdentifier>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <fixedCode value="final" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="34117-2" />
+          <display value="History and physical note" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.encounter.reference">
+      <path value="Composition.encounter.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author:Patient">
+      <path value="Composition.author" />
+      <sliceName value="Patient" />
+      <min value="1" />
+      <max value="1" />
+      <patternReference>
+        <type value="Patient" />
+      </patternReference>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author:Practitioner">
+      <path value="Composition.author" />
+      <sliceName value="Practitioner" />
+      <min value="1" />
+      <max value="1" />
+      <patternReference>
+        <type value="Practitioner" />
+      </patternReference>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <fixedString value="Medical Certificate For Driving License" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="mode" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Patient">
+      <path value="Composition.attester" />
+      <sliceName value="Patient" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Patient.mode">
+      <path value="Composition.attester.mode" />
+      <fixedCode value="personal" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Patient.party">
+      <path value="Composition.attester.party" />
+      <min value="1" />
+      <patternReference>
+        <type value="Patient" />
+      </patternReference>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Practitioner">
+      <path value="Composition.attester" />
+      <sliceName value="Practitioner" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Practitioner.mode">
+      <path value="Composition.attester.mode" />
+      <fixedCode value="professional" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.attester:Practitioner.party">
+      <path value="Composition.attester.party" />
+      <min value="1" />
+      <patternReference>
+        <type value="Practitioner" />
+      </patternReference>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.custodian.reference">
+      <path value="Composition.custodian.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient">
+      <path value="Composition.section" />
+      <sliceName value="sectionPatient" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="ส่วนที่ 1 ของผู้ขอใบรับรองสุขภาพ" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.author">
+      <path value="Composition.section.author" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.focus">
+      <path value="Composition.section.focus" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.text">
+      <path value="Composition.section.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.entry:questionnaireResponse">
+      <path value="Composition.section.entry" />
+      <sliceName value="questionnaireResponse" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPatient.entry:provenance">
+      <path value="Composition.section.entry" />
+      <sliceName value="provenance" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner">
+      <path value="Composition.section" />
+      <sliceName value="sectionPractitioner" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="ส่วนที่ 2 ของแพทย์" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.author">
+      <path value="Composition.section.author" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.focus">
+      <path value="Composition.section.focus" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.text">
+      <path value="Composition.section.text" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.entry:condition">
+      <path value="Composition.section.entry" />
+      <sliceName value="condition" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.entry:vitalSigns">
+      <path value="Composition.section.entry" />
+      <sliceName value="vitalSigns" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.entry:generalAppearance">
+      <path value="Composition.section.entry" />
+      <sliceName value="generalAppearance" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionPractitioner.entry:provenance">
+      <path value="Composition.section.entry" />
+      <sliceName value="provenance" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

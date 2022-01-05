@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="04a753ed-040f-4237-9ab3-2686738911be" />
+  <meta>
+    <versionId value="2" />
+    <lastUpdated value="2022-01-05T07:48:33.802+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLProvenancePatientProfile" />
+  <title value="ETDA-MCDL-Provenance-Patient" />
+  <status value="draft" />
+  <date value="2022-01-05T07:48:32.358198+00:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Provenance resource ใช้บันทึกข้อมูลการลงลายมือชื่อของผู้ป่วย" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Provenance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target:patient">
+      <path value="Provenance.target" />
+      <sliceName value="patient" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target:patient.reference">
+      <path value="Provenance.target.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target:questionnaireResponse">
+      <path value="Provenance.target" />
+      <sliceName value="questionnaireResponse" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target:questionnaireResponse.reference">
+      <path value="Provenance.target.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.activity">
+      <path value="Provenance.activity" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/R4/v3/DataOperation/cs.html" />
+          <code value="CREATE" />
+          <display value="create" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.type">
+      <path value="Provenance.agent.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type" />
+          <code value="author" />
+          <display value="Author" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.who">
+      <path value="Provenance.agent.who" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.who.reference">
+      <path value="Provenance.agent.who.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature">
+      <path value="Provenance.signature" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.type">
+      <path value="Provenance.signature.type" />
+      <patternCoding>
+        <system value="urn:iso-astm:E1762-95:2013" />
+        <code value="1.2.840.10065.1.12.1.1" />
+        <display value="Author's Signature" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.when">
+      <path value="Provenance.signature.when" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.who">
+      <path value="Provenance.signature.who" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.who.reference">
+      <path value="Provenance.signature.who.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.targetFormat">
+      <path value="Provenance.signature.targetFormat" />
+      <min value="1" />
+      <fixedCode value="json" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.sigFormat">
+      <path value="Provenance.signature.sigFormat" />
+      <min value="1" />
+      <fixedCode value="application/jose" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature.data">
+      <path value="Provenance.signature.data" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

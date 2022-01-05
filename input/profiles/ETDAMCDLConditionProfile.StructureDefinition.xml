@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="de6b2615-b71e-49d3-a1e9-78d026a0d2a2" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-30T06:45:02.32+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition" />
+  <version value="0.1" />
+  <name value="ETDAMCDLConditionProfile" />
+  <title value="ETDA-MCDL-Condition" />
+  <status value="draft" />
+  <date value="2021-12-30T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Condition resource ใช้บันทึกผลการวินิจฉัย" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <definition value="Identification of the condition, problem or diagnosis. หากปกติ ใช้ SNOMED CT code: &quot;102499006&quot; display: &quot;Fit and well&quot;" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.encounter">
+      <path value="Condition.encounter" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence">
+      <path value="Condition.evidence" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence.detail">
+      <path value="Condition.evidence.detail" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence.detail:vitalSign">
+      <path value="Condition.evidence.detail" />
+      <sliceName value="vitalSign" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence.detail:vitalSign.reference">
+      <path value="Condition.evidence.detail.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence.detail:generalAppearance">
+      <path value="Condition.evidence.detail" />
+      <sliceName value="generalAppearance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.evidence.detail:generalAppearance.reference">
+      <path value="Condition.evidence.detail.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.note">
+      <path value="Condition.note" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="196f940b-649e-4636-91a7-fe40452a0c58" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-12-30T06:25:13.156+00:00" />
+  </meta>
+  <url value="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile" />
+  <version value="0.1" />
+  <name value="ETDAMCDLEncounterProfile" />
+  <title value="ETDA-MCDL-Encounter" />
+  <status value="draft" />
+  <date value="2021-12-30T00:00:00+07:00" />
+  <publisher value="Electronic Transactions Development Agency (ETDA)" />
+  <description value="profile สำหรับ Encounter resource ใช้บันทึกข้อมูลการตรวจ" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="TH" />
+    </coding>
+  </jurisdiction>
+  <purpose value="คำบรรยาย" />
+  <copyright value="No Rights Reserved (CC0)" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="AMB" />
+        <display value="ambulatory" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="individual.reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Encounter.participant:doctor">
+      <path value="Encounter.participant" />
+      <sliceName value="doctor" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.participant:doctor.individual">
+      <path value="Encounter.participant.individual" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.participant:doctor.individual.reference">
+      <path value="Encounter.participant.individual.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="location.reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location:clinic">
+      <path value="Encounter.location" />
+      <sliceName value="clinic" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location:clinic.location">
+      <path value="Encounter.location.location" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.location:clinic.location.reference">
+      <path value="Encounter.location.location.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider">
+      <path value="Encounter.serviceProvider" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider.reference">
+      <path value="Encounter.serviceProvider.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
