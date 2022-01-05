@@ -1,0 +1,997 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 107, errors = 52, warn = 22, info = 0 -->
+<head>
+  <title>ETDAMCDLIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ETDAMCDLIG</h1>
+ <p>Generated Wed Jan 05 23:45:55 ICT 2022, FHIR version 4.0.1 for etda.fhir.mcdl#0.1 (canonical = <a href="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir">https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir</a> (<a href="https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/history.html">history</a>)). See <a href="/users/rathpanyowat/desktop/etda-mcdl-ig/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.93</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = etda.fhir.mcdl, Canonical = https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">16 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> etda.fhir.mcdl</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir (Problem #1 with package-list.json at https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null]))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 107, errors = 52, warn = 22, info = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>107</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_ig"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/ig</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLBundleProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLBundleProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLCompositionProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLCompositionProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>9</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLConditionProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLConditionProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLEncounterProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLEncounterProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLLocationProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLLocationProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLObservationGAProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLOrganizationProviderProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLPatientProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPatientProfile.StructureDefinition</b></a></td><td><b>5</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLPractitionerProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLProvenancePatientProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition</b></a></td><td><b>7</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLProvenancePractitionerProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition</b></a></td><td><b>7</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLQuestionnaireResponseProfile.StructureDefinition"><b>/Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be etda.fhir.mcdl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-definitions.html#l4768">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-definitions.html#/html/body/div/div/div/p/a at Line 909, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-examples.html#l292">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-mappings.html#l1100">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be-mappings.html#/html/body/div/div/div/p/a at Line 347, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html#l9332">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 1035, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.history.html#l287">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.json.html#l6751">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.json.html#/html/body/div/div/div/p/a at Line 3562, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.ttl.html#l14045">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.ttl.html#/html/body/div/div/div/p/a at Line 3137, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.xml.html#l12577">output/StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.profile.xml.html#/html/body/div/div/div/p/a at Line 3211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-definitions.html#l3122">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-definitions.html#/html/body/div/div/div/p/a at Line 665, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-examples.html#l292">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-mappings.html#l912">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e-mappings.html#/html/body/div/div/div/p/a at Line 319, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.html#l6765">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.html#/html/body/div/div/div/p/a at Line 829, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.history.html#l287">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.json.html#l4525">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.json.html#/html/body/div/div/div/p/a at Line 2399, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.ttl.html#l9191">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.ttl.html#/html/body/div/div/div/p/a at Line 2098, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.xml.html#l8326">output/StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.profile.xml.html#/html/body/div/div/div/p/a at Line 2175, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-definitions.html#l6960">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-definitions.html#/html/body/div/div/div/p/a at Line 1249, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-examples.html#l292">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-mappings.html#l1648">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58-mappings.html#/html/body/div/div/div/p/a at Line 426, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.html#l9833">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.html#/html/body/div/div/div/p/a at Line 1154, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.history.html#l287">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.json.html#l10132">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.json.html#/html/body/div/div/div/p/a at Line 5333, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.ttl.html#l21161">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.ttl.html#/html/body/div/div/div/p/a at Line 4643, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.xml.html#l18901">output/StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.profile.xml.html#/html/body/div/div/div/p/a at Line 4704, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-definitions.html#l4870">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-definitions.html#/html/body/div/div/div/p/a at Line 952, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-examples.html#l292">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-mappings.html#l1349">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462-mappings.html#/html/body/div/div/div/p/a at Line 383, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html#l7727">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html#/html/body/div/div/div/p/a at Line 979, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.history.html#l287">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.json.html#l7015">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.json.html#/html/body/div/div/div/p/a at Line 3728, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.ttl.html#l14549">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.ttl.html#/html/body/div/div/div/p/a at Line 3211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.xml.html#l13165">output/StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.profile.xml.html#/html/body/div/div/div/p/a at Line 3365, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-definitions.html#l2964">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-definitions.html#/html/body/div/div/div/p/a at Line 648, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-examples.html#l292">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-mappings.html#l911">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6-mappings.html#/html/body/div/div/div/p/a at Line 319, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.html#l4798">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.html#/html/body/div/div/div/p/a at Line 745, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.history.html#l287">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.json.html#l4321">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.json.html#/html/body/div/div/div/p/a at Line 2314, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.ttl.html#l8801">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.ttl.html#/html/body/div/div/div/p/a at Line 2019, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.xml.html#l7984">output/StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.profile.xml.html#/html/body/div/div/div/p/a at Line 2081, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-definitions.html#l2025">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-definitions.html#/html/body/div/div/div/p/a at Line 500, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-examples.html#l292">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-mappings.html#l680">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189-mappings.html#/html/body/div/div/div/p/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.html#l3191">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.html#/html/body/div/div/div/p/a at Line 632, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.history.html#l287">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.json.html#l2878">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.json.html#/html/body/div/div/div/p/a at Line 1542, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.ttl.html#l5741">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.ttl.html#/html/body/div/div/div/p/a at Line 1386, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.xml.html#l5224">output/StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.profile.xml.html#/html/body/div/div/div/p/a at Line 1417, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-definitions.html#l3057">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-definitions.html#/html/body/div/div/div/p/a at Line 657, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-examples.html#l292">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-mappings.html#l665">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7-mappings.html#/html/body/div/div/div/p/a at Line 282, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.html#l3925">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.html#/html/body/div/div/div/p/a at Line 725, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.history.html#l287">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.json.html#l4252">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.json.html#/html/body/div/div/div/p/a at Line 2229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.ttl.html#l8534">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.ttl.html#/html/body/div/div/div/p/a at Line 1971, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.xml.html#l7657">output/StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.profile.xml.html#/html/body/div/div/div/p/a at Line 1989, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-definitions.html#l4027">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-definitions.html#/html/body/div/div/div/p/a at Line 795, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-examples.html#l292">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-mappings.html#l709">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93-mappings.html#/html/body/div/div/div/p/a at Line 291, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.html#l5948">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.html#/html/body/div/div/div/p/a at Line 855, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.history.html#l287">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.json.html#l5455">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.json.html#/html/body/div/div/div/p/a at Line 2808, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.ttl.html#l11117">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.ttl.html#/html/body/div/div/div/p/a at Line 2493, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.xml.html#l10051">output/StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.profile.xml.html#/html/body/div/div/div/p/a at Line 2560, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-definitions.html#l7863">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-definitions.html#/html/body/div/div/div/p/a at Line 1380, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-examples.html#l292">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-mappings.html#l1205">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e-mappings.html#/html/body/div/div/div/p/a at Line 360, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.html#l12129">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.html#/html/body/div/div/div/p/a at Line 1282, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.history.html#l287">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.json.html#l10324">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.json.html#/html/body/div/div/div/p/a at Line 5317, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.ttl.html#l21644">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.ttl.html#/html/body/div/div/div/p/a at Line 4694, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.xml.html#l19489">output/StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.profile.xml.html#/html/body/div/div/div/p/a at Line 4833, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-definitions.html#l4399">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-definitions.html#/html/body/div/div/div/p/a at Line 844, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-examples.html#l292">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-mappings.html#l1316">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272-mappings.html#/html/body/div/div/div/p/a at Line 393, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.html#l7183">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.html#/html/body/div/div/div/p/a at Line 920, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.history.html#l287">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.json.html#l6004">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.json.html#/html/body/div/div/div/p/a at Line 3251, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.ttl.html#l12695">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.ttl.html#/html/body/div/div/div/p/a at Line 2887, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.xml.html#l11395">output/StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.profile.xml.html#/html/body/div/div/div/p/a at Line 2977, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-definitions.html#l4311">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-definitions.html#/html/body/div/div/div/p/a at Line 837, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-examples.html#l292">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-mappings.html#l1030">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a-mappings.html#/html/body/div/div/div/p/a at Line 337, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html#l8707">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html#/html/body/div/div/div/div/div/table/tr/td/span/div/div/div/p/a at Line 983, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.history.html#l287">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.json.html#l6106">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.json.html#/html/body/div/div/div/p/a at Line 3231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.ttl.html#l12698">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.ttl.html#/html/body/div/div/div/p/a at Line 2858, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.xml.html#l11377">output/StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.profile.xml.html#/html/body/div/div/div/p/a at Line 2919, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-definitions.html#l3670">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-definitions.html#/html/body/div/div/div/p/a at Line 736, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-examples.html#l292">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-mappings.html#l1126">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2-mappings.html#/html/body/div/div/div/p/a at Line 364, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.html#l5679">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.html#/html/body/div/div/div/p/a at Line 834, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.history.html#l287">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.json.html#l5449">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.json.html#/html/body/div/div/div/p/a at Line 2927, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.ttl.html#l11339">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.ttl.html#/html/body/div/div/div/p/a at Line 2584, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.xml.html#l10177">output/StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.profile.xml.html#/html/body/div/div/div/p/a at Line 2648, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-definitions.html#l8889">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-definitions.html#/html/body/div/div/div/p/a at Line 1553, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-examples.html#l292">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-mappings.html#l2087">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33-mappings.html#/html/body/div/div/div/p/a at Line 489, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html#l16270">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html#/html/body/div/div/div/p/a at Line 1432, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.history.html#l287">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.json.html#l12667">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.json.html#/html/body/div/div/div/p/a at Line 6653, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.ttl.html#l26897">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.ttl.html#/html/body/div/div/div/p/a at Line 5848, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.xml.html#l24085">output/StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.profile.xml.html#/html/body/div/div/div/p/a at Line 5990, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l489">output/artifacts.html#/html/body/div/div/div/p/a at Line 278, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l260">output/index.html#/html/body/div/div/div/p/a at Line 149, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l374">output/toc.html#/html/body/div/div/div/p/a at Line 133, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;Electronic Transactions Development Agency (ETDA)&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_ig"> </a>
+<h2><a href="ImplementationGuide-ETDAMCDLIG.html">input/ig.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"></div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/ig.json - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ETDAMCDLIG) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: ETDAMCDLIG/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/ig</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ETDAMCDLIG vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLBundleProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.html">input/profiles/ETDAMCDLBundleProfile.StructureDefinition.xml</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLBundleProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/96ac257c-fd29-4c9d-b3bf-d69089a42f93) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 96ac257c-fd29-4c9d-b3bf-d69089a42f93/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLBundleProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/96ac257c-fd29-4c9d-b3bf-d69089a42f93 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLCompositionProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/e915d54f-0527-4fcd-9d78-96a03fb90e33) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: e915d54f-0527-4fcd-9d78-96a03fb90e33/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[29].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[30].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[46].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[53].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[10].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[11].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[16].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[19].pattern.ofType(Reference)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLCompositionProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/e915d54f-0527-4fcd-9d78-96a03fb90e33 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLConditionProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.html">input/profiles/ETDAMCDLConditionProfile.StructureDefinition.xml</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLConditionProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/de6b2615-b71e-49d3-a1e9-78d026a0d2a2) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: de6b2615-b71e-49d3-a1e9-78d026a0d2a2/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLConditionProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/de6b2615-b71e-49d3-a1e9-78d026a0d2a2 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLEncounterProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.html">input/profiles/ETDAMCDLEncounterProfile.StructureDefinition.xml</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLEncounterProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/196f940b-649e-4636-91a7-fe40452a0c58) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 196f940b-649e-4636-91a7-fe40452a0c58/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLEncounterProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/196f940b-649e-4636-91a7-fe40452a0c58 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLLocationProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.html">input/profiles/ETDAMCDLLocationProfile.StructureDefinition.xml</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLLocationProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLLocationProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLObservationGAProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.html">input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition.xml</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d5384bcb-0b50-41ee-8a26-e23108728272) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: d5384bcb-0b50-41ee-8a26-e23108728272/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d5384bcb-0b50-41ee-8a26-e23108728272 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.html">input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition.xml</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/8737ce91-1a93-4de1-9d64-e823bacae189) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 8737ce91-1a93-4de1-9d64-e823bacae189/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/8737ce91-1a93-4de1-9d64-e823bacae189 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLOrganizationProviderProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.html">input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition.xml</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/6cbea532-da53-448f-8d43-207569b369f6) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 6cbea532-da53-448f-8d43-207569b369f6/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/6cbea532-da53-448f-8d43-207569b369f6 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLPatientProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html">input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/65b68a5a-cbb3-45f8-8cad-96b329933462) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 65b68a5a-cbb3-45f8-8cad-96b329933462/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[10].pattern.ofType(Identifier).type.coding[0]</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[2].pattern.ofType(Identifier).type.coding[0]</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLPatientProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/65b68a5a-cbb3-45f8-8cad-96b329933462 vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLPractitionerProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.html">input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition.xml</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/0fcbe619-0b65-4ec9-b920-b4f9d638b61e) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 0fcbe619-0b65-4ec9-b920-b4f9d638b61e/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/0fcbe619-0b65-4ec9-b920-b4f9d638b61e vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLProvenancePatientProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/04a753ed-040f-4237-9ab3-2686738911be) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: 04a753ed-040f-4237-9ab3-2686738911be/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[29].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[29].pattern.ofType(CodeableConcept).coding[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/04a753ed-040f-4237-9ab3-2686738911be vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLProvenancePractitionerProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d7b378c4-2b84-45af-a8b7-28f235dba53a) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: d7b378c4-2b84-45af-a8b7-28f235dba53a/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[22].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[22].pattern.ofType(CodeableConcept).coding[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>error</b></td><td title="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d7b378c4-2b84-45af-a8b7-28f235dba53a vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_rathpanyowat_Desktop_ETDA-MCDL-IG_input_profiles_ETDAMCDLQuestionnaireResponseProfile.StructureDefinition"> </a>
+<h2><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.html">input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition.xml</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/b9c6f7bf-09ee-4f55-b849-68ef04eae01e) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: b9c6f7bf-09ee-4f55-b849-68ef04eae01e/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/b9c6f7bf-09ee-4f55-b849-68ef04eae01e vs https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>Have verified that these examples are being checked against the expected profiles/resources.</b></p><ul>
+ <li>INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient: Validate resource against profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: StructureDefinition.where(url = 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner'): The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>The objective is to show a reference to an unknown code system, so these warnings are expected</b></p><ul>
+ <li>WARNING: ValueSet.where(id = 'valueset-no-codesystem'): Error from server: Unable to provide support for code system http://not-a-known-code-system <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: ValueSet/valueset-no-codesystem: ValueSet.compose[0].include[0]: Unknown System/Version specified, so Concepts and Filters can''t be checked <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We don't want a code for the change reason (and this binding shouldn't be extensible anyhow)</b></p><ul>
+ <li>WARNING: Bundle/h1: Bundle.entry[0].resource.ofType(Provenance).reason[0]: No code provided, and a code should be provided from the value set http://terminology.hl7.org/ValueSet/v3-PurposeOfUse (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse) <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We expect that all of the 'structural' resources will only be validated against their respective 'core' resource definitions</b></p><ul>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide <span style="color: navy">(4 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library <span style="color: maroon">(0 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition <span style="color: navy">(52 uses)<span></li>
+ <li>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ETDAMCDLIG.html">input/ig.json</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/ig.json - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ETDAMCDLIG) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.html">input/profiles/ETDAMCDLBundleProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLBundleProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/96ac257c-fd29-4c9d-b3bf-d69089a42f93) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/e915d54f-0527-4fcd-9d78-96a03fb90e33) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.html">input/profiles/ETDAMCDLConditionProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLConditionProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/de6b2615-b71e-49d3-a1e9-78d026a0d2a2) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.html">input/profiles/ETDAMCDLEncounterProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLEncounterProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/196f940b-649e-4636-91a7-fe40452a0c58) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.html">input/profiles/ETDAMCDLLocationProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLLocationProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.html">input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d5384bcb-0b50-41ee-8a26-e23108728272) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.html">input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/8737ce91-1a93-4de1-9d64-e823bacae189) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.html">input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/6cbea532-da53-448f-8d43-207569b369f6) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html">input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/65b68a5a-cbb3-45f8-8cad-96b329933462) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.html">input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/0fcbe619-0b65-4ec9-b920-b4f9d638b61e) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/04a753ed-040f-4237-9ab3-2686738911be) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/d7b378c4-2b84-45af-a8b7-28f235dba53a) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.html">input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition.xml</a></td><td><b>Conformance resource /Users/rathpanyowat/Desktop/ETDA-MCDL-IG/input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition.xml - the canonical URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/b9c6f7bf-09ee-4f55-b849-68ef04eae01e) does not match the URL (https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ETDAMCDLIG.html">input/ig.json</a></td><td><b>Resource id/url mismatch: ETDAMCDLIG/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-96ac257c-fd29-4c9d-b3bf-d69089a42f93.html">input/profiles/ETDAMCDLBundleProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 96ac257c-fd29-4c9d-b3bf-d69089a42f93/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: e915d54f-0527-4fcd-9d78-96a03fb90e33/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-de6b2615-b71e-49d3-a1e9-78d026a0d2a2.html">input/profiles/ETDAMCDLConditionProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: de6b2615-b71e-49d3-a1e9-78d026a0d2a2/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-196f940b-649e-4636-91a7-fe40452a0c58.html">input/profiles/ETDAMCDLEncounterProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 196f940b-649e-4636-91a7-fe40452a0c58/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7.html">input/profiles/ETDAMCDLLocationProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d5384bcb-0b50-41ee-8a26-e23108728272.html">input/profiles/ETDAMCDLObservationGAProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: d5384bcb-0b50-41ee-8a26-e23108728272/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-8737ce91-1a93-4de1-9d64-e823bacae189.html">input/profiles/ETDAMCDLOrganizationICTMoPHProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 8737ce91-1a93-4de1-9d64-e823bacae189/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-6cbea532-da53-448f-8d43-207569b369f6.html">input/profiles/ETDAMCDLOrganizationProviderProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 6cbea532-da53-448f-8d43-207569b369f6/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html">input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 65b68a5a-cbb3-45f8-8cad-96b329933462/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-0fcbe619-0b65-4ec9-b920-b4f9d638b61e.html">input/profiles/ETDAMCDLPractitionerProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 0fcbe619-0b65-4ec9-b920-b4f9d638b61e/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: 04a753ed-040f-4237-9ab3-2686738911be/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: d7b378c4-2b84-45af-a8b7-28f235dba53a/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-b9c6f7bf-09ee-4f55-b849-68ef04eae01e.html">input/profiles/ETDAMCDLQuestionnaireResponseProfile.StructureDefinition.xml</a></td><td><b>Resource id/url mismatch: b9c6f7bf-09ee-4f55-b849-68ef04eae01e/https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_NoDisplay"> </a>
+<h2>Reference_REF_NoDisplay</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-e915d54f-0527-4fcd-9d78-96a03fb90e33.html">input/profiles/ETDAMCDLCompositionProfile.StructureDefinition.xml</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_WRONG_HTML</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>The code system reference http://hl7.org/fhir/R4/v3/DataOperation/cs.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html">input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-65b68a5a-cbb3-45f8-8cad-96b329933462.html">input/profiles/ETDAMCDLPatientProfile.StructureDefinition.xml</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNTHA'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-04a753ed-040f-4237-9ab3-2686738911be.html">input/profiles/ETDAMCDLProvenancePatientProfile.StructureDefinition.xml</a></td><td><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-d7b378c4-2b84-45af-a8b7-28f235dba53a.html">input/profiles/ETDAMCDLProvenancePractitionerProfile.StructureDefinition.xml</a></td><td><b>URL value 'http://hl7.org/fhir/R4/v3/DataOperation/cs.html' does not resolve</b></td>
+   </tr>
+</table>
+</body>
+</html>

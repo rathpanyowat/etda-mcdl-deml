@@ -1,0 +1,12 @@
+{
+  "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig",
+  "name": "ETDAMCDLIG",
+  "package-id": "etda.fhir.mcdl",
+  "ig-ver": "0.1",
+  "date": "Wed, 05 Jan, 2022 23:45:23 +0700",
+  "errs": 52,
+  "warnings": 22,
+  "hints": 0,
+  "version": "4.0.1",
+  "tool": "5.0.0-snapshot1 (3)"
+}

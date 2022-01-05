@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ETDAMCDLIG",
+    "type": "ImplementationGuide",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/ImplementationGuide/ig",
+    "version": "0.1",
+    "name": "ETDAMCDLIG"
+  },
+  {
+    "id": "96ac257c-fd29-4c9d-b3bf-d69089a42f93",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/MCDL",
+    "version": "0.1",
+    "name": "ETDAMCDLBundleProfile"
+  },
+  {
+    "id": "e915d54f-0527-4fcd-9d78-96a03fb90e33",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCompositionProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLCompositionProfile"
+  },
+  {
+    "id": "de6b2615-b71e-49d3-a1e9-78d026a0d2a2",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLCondition",
+    "version": "0.1",
+    "name": "ETDAMCDLConditionProfile"
+  },
+  {
+    "id": "196f940b-649e-4636-91a7-fe40452a0c58",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLEncounterProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLEncounterProfile"
+  },
+  {
+    "id": "89a2dfaa-153e-4022-bdb3-4ab9fdcc47f7",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLLocationProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLLocationProfile"
+  },
+  {
+    "id": "d5384bcb-0b50-41ee-8a26-e23108728272",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLObservationGA",
+    "version": "0.1",
+    "name": "ETDAMCDLObservationGAProfile"
+  },
+  {
+    "id": "8737ce91-1a93-4de1-9d64-e823bacae189",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationICTMoPHProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLOrganizationICTMoPHProfile"
+  },
+  {
+    "id": "6cbea532-da53-448f-8d43-207569b369f6",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLOrganizationProviderProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLOrganizationProviderProfile"
+  },
+  {
+    "id": "0fcbe619-0b65-4ec9-b920-b4f9d638b61e",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLPractitioner",
+    "version": "0.1",
+    "name": "ETDAMCDLPractitionerProfile"
+  },
+  {
+    "id": "04a753ed-040f-4237-9ab3-2686738911be",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePatientProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLProvenancePatientProfile"
+  },
+  {
+    "id": "d7b378c4-2b84-45af-a8b7-28f235dba53a",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLProvenancePractitionerProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLProvenancePractitionerProfile"
+  },
+  {
+    "id": "b9c6f7bf-09ee-4f55-b849-68ef04eae01e",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/StructureDefinition/ETDAMCDLQuestionnaireResponseProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLQuestionnaireResponseProfile"
+  },
+  {
+    "id": "65b68a5a-cbb3-45f8-8cad-96b329933462",
+    "type": "StructureDefinition",
+    "url": "https://schemas.teda.th/teda/teda-affiliate/office-of-the-permanent-secretary-ministry-of-public-health/medical-certificate/fhir/fhir/StructureDefinition/ETDAMCDLPatientProfile",
+    "version": "0.1",
+    "name": "ETDAMCDLPatientProfile"
+  }
+]
